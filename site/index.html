@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why I love this course of programming !</title>
+   <!-- LE TITRE DE LA PAGE  -->
+    <title>Cour HTML !</title>
+    <!-- Icone de l onglet -->
+    <link rel="shortcut icon" href="logo-html.png">
 </head>
 <body>
-    <h1>Hello coursera!!, it s great course for me</h1>
+    <HEADer>
+            <h1>TEXT  -H1</h1>
+            <P>Text basique . <em>voici un text en italique</em>. <strong>Un text en gras !</strong>. <span>l element en span 
+                ne revient pas a la ligne </span></P>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut repudiandae culpa perferendis totam! Quis 
+                    in sequi est, a, optio quod eligendi provident dolorum explicabo animi expedita ratione porro, quasi illum!</p>
+    </HEADer>
+    <section>
+        <div>
+            <h2>PHOTO -H2</h2>
+            <img src="photo-pysage.jpg" height="200" alt="image photo-pysage">
+        </div>
+        <div>
+            <h3>Listes -H3</h3>
+            <ul>
+                <li>UL= unordered list</li>
+                <li>UL= unordered list</li>
+                <li>UL= unordered list</li>
+            </ul>
+            <OL>
+                <LI>OL= Order list</LI>
+                <LI>OL= Order list</LI>
+                <LI>OL= Order list</LI>
+            </OL>
+        </div>
+        <div>
+            <h4>Tableau -H4</h4>
+            <table border="1" width="50%">
+                <!-- legend  -->
+                <caption>Population d'Europe 2019</caption>
+                <!-- en-tete -->
+                <thead>
+                    <tr>
+                        <th>pays</th>
+                        <th>population</th>
+                    </tr>
+                </thead>
+                <!-- CORP DU TABLEAU -->
+                <TBody>
+                    <TR>
+                        <TD>FRANCE</TD>
+                        <TD>67M</TD>
+                    </TR>
+                    <TR>
+                        <TD>ALMAGNE</TD>
+                        <TD>88M</TD>
+                    </TR>
+                    <TR>
+                        <TD>ESPAGNE</TD>
+                        <TD>55M</TD>
+                    </TR>
+                    
+                </TBody>
+            </table>
+        </div>
+        <div>
+            <h5><span>&#9758;</span> Liens -H5</h5>
+            <a href="https://github.com/BASIMAISSA/coursera-test/blob/main/site/index.html"target="_blank"> Mon serveur</a>
+            <br>
+            <a href="https://www.toptal.com/designers/htmlarrows/symbols/"target="_blank"> Icones HTML</a>
+        </div>
+        <div>
+            <h6>Video -H6</h6>
+            <video src="Video.mp4" autoplay loop muted width="40%"></video>
+        </div>
+    </section>
+    <br>
+    <!-- Formulaire -->
+    <section>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+            <label for="name">Nom </label>
+            <input id= "name" type="text" placeholder="Entrer votre nom">
+            <br>
+            <label for="Age">Age </label>
+            <input id= "Age" type="number" min="0" max="99" step="1" value="18">
+            <br>
+            <!-- Input select -->
+            <label for="gender">Genre</label>
+            <select id="gender">
+                <option value="homme">Homme</option>
+                <option selected value="femme">Femme</option>
+            </select><br>
+            <!-- input radio -->
+            <div>
+                <input type="radio" name="type" checked id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio" name="type" id="dog">
+                <label for="dog">Chien</label>
+
+                <input type="radio" name="type" id="cat">
+                <label for="cat">Chat</label>
+            </div>
+              <textarea cols="30" rows="10" placeholder="Enter votre demande ici"></textarea><br>
+              <!-- input checkbox -->
+            <label><input type="checkbox"/>Accepter les CGV </label> <br>
+            <input type="submit" value="Valider">
+        </form>
+<br>
+    </section>
+  <!-- Mail & Envoi des fichier   -->
+  <footer>
+    <a href="mailto:aissabasim@gmail.com"> Ecrivez-moi ! </a><br>
+    <a href="notice.txt" download="nom-du-fichier">Télécharger la notice </a>
+  </footer>
 </body>
 </html>
